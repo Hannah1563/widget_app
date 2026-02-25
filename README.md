@@ -39,7 +39,8 @@ This demo highlights three key properties of the `Shimmer.fromColors` widget:
 
 ## Screenshot
 
-![Shimmer Demo Screenshot](screenshot.png)
+![Shimmer Demo Screenshot](screenshot1.png)
+![Shimmer Demo Screenshot](screenshot2.png)
 
 ---
 
