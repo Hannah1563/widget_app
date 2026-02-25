@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
+// App entry point
 void main() {
   runApp(const MyApp());
 }
-
+/// Root widget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+/// Main page with shimmer and actual list
 class ShimmerExamplePage extends StatefulWidget {
   const ShimmerExamplePage({super.key});
 
@@ -74,7 +75,7 @@ class _ShimmerExamplePageState extends State<ShimmerExamplePage> {
       ),
     );
   }
-
+// Shimmer loading list
   Widget _buildShimmerList() {
     return ListView.builder(
       itemCount: 6,
@@ -82,7 +83,9 @@ class _ShimmerExamplePageState extends State<ShimmerExamplePage> {
         return Padding(
           padding: const EdgeInsets.only(bottom: 16.0),
           child: Shimmer.fromColors(
+            // baseColor property
             baseColor: Colors.grey[300]!,
+            // highlightColor property
             highlightColor: Colors.grey[100]!,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
